@@ -1,0 +1,32 @@
+Authors:
+NetIDs: 
+Date: 
+Project Name: Lab 5
+
+# Description
+In this lab, you will work in a ** team ** of four people. Since this is the case, the code given to you is extremely minimal. You will work together to interface with the adxl345 accelerometer using the I2C communication protocol. To show you have interfaced correctly, you will print the x, y, and z axis values to the monitor using Serial.
+
+# Instructions
+You will need to create a circuit using your breadboard, jumper wires and the accelerometer.
+
+# Requirements
+## Overall
+1. The project must follow good coding practices and be well commented.
+2. Arduino libraries are not allowed at all for this lab with the exception of debug/printing functionality using Serial.println.
+
+## i2c.cpp
+1. All communication must be done over the SDA and SCL pins.
+2. beginTransmission function should accept one int parameter.
+3. endTransmission function should accept no parameters.
+4. write function should accept one int parameter.
+5. requestFrom should accept 2 int parameters.
+6. available should accept no parameters.
+7. read should accept no parameters.
+ 
+## timer.cpp
+1. Implement a precise millisecond timer using timer 1.
+
+## main.cpp
+1. Should print out all 3 axis data points.
+2. Data should print once every 1000 milliseconds.
+
